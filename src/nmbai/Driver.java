@@ -63,6 +63,8 @@ public class Driver {
             if (running) {
                 e.printStackTrace();
             }
+        } catch (NullPointerException ignored) {
+            //NullPointerException thrown when client fails to connect to server
         }
     }
 }
